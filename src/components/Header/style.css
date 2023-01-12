@@ -1,0 +1,27 @@
+header .nav-main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(37, 36, 34, 0.8);
+}
+
+header .nav-main img {
+  width: 500px;
+}
+
+header .nav-main ul {
+  display: flex;
+  list-style: none;
+}
+ul li a {
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+ul li a:hover {
+  cursor: pointer;
+  color: #ffd23f;
+  transition: 0.3s;
+}

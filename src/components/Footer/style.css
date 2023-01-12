@@ -1,0 +1,40 @@
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(37, 36, 34, 0.8);
+  margin-top: 1rem;
+  padding: 1px 0px;
+}
+
+footer .api a {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  color: white;
+  border-radius: 10px;
+}
+
+footer .api a:hover {
+  color: #ffd23f;
+  transition: 0.5s;
+}
+
+.icon {
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+footer .name {
+  text-align: center;
+}
+
+.socials a {
+  text-decoration: none;
+  color: black;
+}
+
+.socials a:hover {
+  color: #ffd23f;
+  transition: 0.5s;
+}
