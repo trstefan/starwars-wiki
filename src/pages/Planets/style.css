@@ -1,10 +1,31 @@
+.count {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #ffd23f;
+}
+
 .planets-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
+  text-align: center;
+  margin: 2rem;
 }
 
 .planet-card {
   display: flex;
   flex-direction: column;
+  color: aliceblue;
+  background-color: rgba(37, 36, 34, 0.5);
+  border-radius: 50px 20px;
+  padding: 1rem 0;
+  border: 2px solid #ffd23f;
+}
+
+@media (max-width: 700px) {
+  .planets-grid {
+    display: flex;
+    flex-direction: column;
+  }
 }

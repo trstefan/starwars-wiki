@@ -2,12 +2,11 @@ import React from "react";
 import { Header } from "../../components/Header/Header";
 import { Footer } from "../../components/Footer/Footer";
 import "./style.css";
-import { FaJediOrder } from "react-icons/fa";
 import pic from "../../assets/sw-t-logo.png";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { Timeline } from "rsuite";
-import { keyboard } from "@testing-library/user-event/dist/keyboard";
+import { Link } from "react-router-dom";
 
 export const Home = () => {
   const [movies, setMovies] = useState([]);
@@ -29,41 +28,38 @@ export const Home = () => {
         <section>
           <h2>Star Wars Wiki</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
-            unde saepe consequuntur velit voluptates! Dolores.
+            Star Wars Wiki, the most complete wikipedia about the Star Wars
+            universe.{" "}
           </p>
         </section>
         <div className="features">
           <div className="feature-card">
             <h1>Characters</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Consectetur, qui.
-            </p>
-            <button>View more</button>
+            <p>Here you can find information about Star Wars characters.</p>
+            <Link to="/characters">
+              <button>View more</button>
+            </Link>
           </div>
           <div className="feature-card">
             <h1>Planets</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Consectetur, qui.
-            </p>
-            <button>View more</button>
+            <p>Here you can find information about Star Wars planets.</p>
+            <Link to="/planets">
+              <button>View more</button>
+            </Link>
           </div>
           <div className="feature-card">
             <h1>Spaceships</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Consectetur, qui.
-            </p>
-            <button>View more</button>
+            <p>Here you can find information about Star Wars starships.</p>
+            <Link to="/starships">
+              <button>View more</button>
+            </Link>
           </div>
         </div>
         <section>
           <h2>Star Wars timeline</h2>
           <Timeline>
             {movies.map((movie) => (
-              <Timeline.Item dot={<FaJediOrder />} key={movie.episode_id}>
+              <Timeline.Item key={movie.episode_id}>
                 <h3>{movie.title}</h3>
                 <strong>Episode {movie.episode_id}</strong>
                 <p>{movie.opening_crawl}</p>

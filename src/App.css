@@ -5,9 +5,15 @@
 
 .buttons-panel button {
   font-size: 15px;
+  font-weight: bold;
   border: none;
   width: 180px;
   padding: 8px;
+}
+
+.buttons-panel button:hover {
+  background-color: #ffd23f;
+  color: rgba(37, 36, 34, 0.5);
 }
 
 .buttons-panel #btnPrevious {

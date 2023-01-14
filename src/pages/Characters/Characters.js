@@ -41,7 +41,7 @@ export const Characters = () => {
   return (
     <div id="main">
       <Header></Header>
-      <div className="count">Total: characters: {count}</div>
+      <div className="count">Total characters: {count}</div>
       <div className="characters-grid">
         {characters.map((character) => (
           <div className="character-card" key={character.name}>

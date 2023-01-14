@@ -24,4 +24,5 @@ ul li a:hover {
   cursor: pointer;
   color: #ffd23f;
   transition: 0.3s;
+  text-decoration: none;
 }
