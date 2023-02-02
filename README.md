@@ -5,35 +5,63 @@
 [Demo Link](https://starwars-wiki-six.vercel.app/)
 ## 📷 Screenshot
 
-<p>
-  <img source="https://github.com/trstefan/starwars-wiki/blob/main/src/screenshots/Category.png" alt="screenshot"/>
-</p>
+### Home page
+  <img src="./src/screenshots/Home.png" width="100%" heigh="100%" alt="screenshot"/>
+  
+### Movies Timeline
+  <img src="./src/screenshots/Timeline.png" width="100%" heigh="100%" alt="screenshot"/>
+  
+### Characters page
+  <img src="./src/screenshots/Category.png" width="100%" heigh="100%" alt="screenshot"/>
 
 ## 📝 Project Description
 
-The News App project allows users to view the list of news in real time. Search and filter different types of news to read. Dark and light mode to transition themes.
+The StarWars Wiki project allows users to view the information about each character, planet and spaceship appeared in the Star Wars universe.  
 
 ## 📚 Technologies
 
-- [ReactJS](https://nextjs.org/)
-- [NextJS](https://nextjs.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Vercel](https://vercel.com/dashboard)
-- [GraphQL](https://graphql.org/)
-- [API: mediastack](https://mediastack.com/)
+- ReactJS
+- React Hooks
+- React Router
+- CSS
+
 
 ## :compass: Roadmap
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
+- [x] Add Home page
+- [x] Fetch movies 
+- [x] Add Category pages
+    - [x] Characters
+    - [x] Planets
+    - [x] Spaceships
 
 ## :runner: Run Locally 
 
+Clone the project
+
+```bash
+  git clone https://github.com/trstefan/starwars-wiki.git
+```
+
+Go to the project directory
+
+```bash
+  cd starwars-wiki
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run start
+```
 
 
 ## :star:	Acknowledgements
+ - [SWAPI](https://swapi.dev/)
+ - [Axios](https://www.npmjs.com/package/axios)
